@@ -1,0 +1,35 @@
+body {
+    //width: 100%;
+    //max-width: 1600px;
+    margin: 0 auto;
+
+}
+
+#root {
+
+    @media (max-width: 561px) {
+        width: 100%;
+    }
+
+}
+
+a {
+    color: #1d1f20;
+}
+
+::placeholder {
+    font-size: 12px;
+    font-family: $ff-light;
+}
+
+    
+
+
+.fa-plus-circle,
+.fa-info-circle {
+    color: #555a5a;
+}
+
+.active_nav {
+    background-color: #ffc000 !important;
+}

@@ -1,0 +1,149 @@
+.aside {
+    font-family: $ff-light;
+    font-size: 14px;
+    color: #1E2021;
+    background: #f4f5f7; //flex-basis: 330px;
+    width: 330px;
+    flex-grow: 0;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+
+    &_section {
+        //border: 1px solid #000;
+        //margin-top: 50px;
+        padding: 50px 0px;
+
+
+        border-top: 1px solid #e0e0e0;
+
+        &:first-child {
+            padding: 0px;
+            border: none; //margin-bottom: 70px;
+        }
+
+        &:last-child {
+            background-color: #eef;
+            padding: 10px 0;
+        }
+
+    }
+    &_info {
+        text-align: center;
+        margin: 0;
+
+        .photo {
+            position: relative;
+
+            .main_photo {
+
+                img {
+                    max-width: 100%;
+                }
+
+            }
+
+            a {
+                .download {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    cursor: pointer;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+
+
+
+        }
+
+
+        .name {
+            margin-top: 10px;
+            font-size: 30px;
+            font-family: $ff-light;
+
+        }
+        .id_number {
+            margin-top: 10px;
+            font-size: 18px;
+
+        }
+        .progress-bar {
+            margin: 15px;
+            border-radius: 2px;
+            background: #ffc000;
+
+        }
+
+    }
+
+    &_contacts {
+
+        .tel {
+
+            span {
+                a {
+                    text-decoration: none;
+                    vertical-align: middle;
+                }
+
+                .social_icons {
+                    display: inline;
+                    margin-left: 20px;
+
+                    a {
+
+
+                        img {
+                            filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24));
+                            max-width: 25px;
+                            vertical-align: middle;
+                        }  
+                    }
+                    .whatsapp {
+                        img {
+                            min-width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &_referal {
+
+
+
+        .all_referal,
+        .your_referal {
+
+            span {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    i {
+        width: 35px;
+        padding: 15px 20px 10px 10px; //font-weight: bold;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    .flex_data {
+        display: flex; //justify-content: space-between;
+    }
+    .flex_data i {
+        padding: 0px 20px 6px 10px;
+
+    }
+
+
+}

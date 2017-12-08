@@ -1,0 +1,141 @@
+main.main
+    .nav_main
+        .nav_links
+            a(href="#").nav_main_active Личные данные
+            a(href="#") Мои сервисы
+            a(href="#") Мой статус
+        span Ваш ID: 1099
+        
+    section.general
+        article.article_left
+            label(for='field1') Фамилия
+            input#field1(type='text')
+            
+            label(for='field2') Имя
+            input#field2(type='text')
+            
+            label(for='field3') Отчество
+            input#field3(type='text')
+            
+            label(for='field4') Дата рождения
+            .field_birthday
+                .birthday
+                    select#field4
+                        option(value="1") 1
+                        option 2
+                        option 3
+                        option 4
+                        option 5
+                        option 6
+                        option 7
+                        option 8
+                        option 9
+                        option 10
+                        option 11
+                        option 12
+                        option 13
+                        option 14
+                        option 15
+                        option 16
+                        option 17
+                        option 18
+                        option 19
+                        option 20
+                        option 21
+                        option 22
+                        option 23
+                        option 24
+                        option 25
+                        option 26
+                        option 27
+                        option 28
+                        option 29
+                        option 30
+                        option 31
+                    span день
+                    
+                .birthday
+                    select
+                        option Январь
+                        option Февраль
+                        option Март
+                        option Апрель
+                        option Май
+                        option Июнь
+                        option Июль
+                        option Август
+                        option Сентябрь
+                        option Октябрь
+                        option Ноябрь
+                        option Декабрь
+                    span месяц
+                    
+                .birthday 
+                    select
+                        option 1
+                        option 2
+                        option 3
+                    span год
+
+            
+            label(for='field5')  Email
+            input#field5(type='email')
+
+        article.article_right
+            label(for='field6') Область
+            input#field6(type='text' placeholder="Введите название области")
+            
+            label(for='field7') Населённый пункт
+            input#field7(type='text' placeholder="Введите название населённого пункта")
+            
+            label(for='field8') Телефон
+            input#field8.country_code(type="tel" placeholder="+380")
+            input.operator_code(type='tel')
+            input.phone_number(type='tel')
+            input.confirm_code(type='tel')
+            span.social_icons
+                i.fa.fa-info-circle(aria-hidden='true')
+                i.fa.fa-plus-circle(aria-hidden='true')
+                a(href="viber://chat?number=380999659908")
+                    img(src="images/viber.svg" title="Viber" alt="Viber")
+                a(href="tg://resolve?domain=jevo" )
+                    img(src="images/telegram.svg" title="Telegram" alt="Telegram")
+                a(href="whatsapp://send?phone=+120345678910").whatsapp
+                    img(src="images/whatsapp.svg" title="WhatsApp" alt="WhatsApp")
+            
+            label(for='field9') Изменить пароль
+            input#field9(type='password' placeholder="Ваш старый пароль")
+            .new_password
+                input(type='password' placeholder="Введите новый пароль")
+                i.fa.fa-info-circle(aria-hidden='true')
+            input(type='password' placeholder="Повторите пароль")
+            
+            .button: a(href="#") Сохранить
+                i.fa.fa-chevron-right(aria-hidden='true')
+        
+    section.tarif
+        .tarif_item1.item
+            p Тарифный пакет: 
+                a(href="#") Выбрать пакет
+            button(type='submit') Поменять тариф
+        .tarif_item2.item
+            p Ваш баланс:
+            p 1250 грн.
+        .tarif_item3.item
+            button(type='submit') Пополнить баланс
+        
+    section.segments
+        .segments_header
+            p Сегменты
+            a(href="#")
+                i.fa.fa-plus-circle(aria-hidden='true')
+                span Добавить сегмент
+        .segments_main
+            .segments_main_links
+                .refer: a(href="#") Операция
+                .refer: a(href="#") Тип объекта
+                .refer: a(href="#") Населённый пункт
+                .refer: a(href="#") Район
+            .segments_main_result
+                isvg(aria-hidden='true')
+                span Сейчас у вас не добавлен ни один сегмент

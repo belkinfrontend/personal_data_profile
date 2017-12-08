@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main-style.min.css">
+    <title>Профиль</title>
+  </head>
+  <body>
+    <div id="root">
+      <header class="header" id="header">
+        <div class="wrap_logo_burger">
+          <div class="burger">
+            <div class="burger_line"></div>
+            <div class="burger_line"></div>
+            <div class="burger_line"></div>
+          </div>
+          <div class="logo"><img class="logo_picture" src="images/logo.png" alt="logo"></div>
+          <div class="logo_text">Система управления<br>агенством недвижимости</div>
+        </div>
+        <div class="inform">
+          <div class="item currency"><i class="fa fa-usd" aria-hidden="true"></i><span>курс доллара: 26.3 / 28.9</span></div>
+          <div class="item location"><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">Днепропетровск</a></div>
+          <div class="item alarm"><i class="fa fa-bell-o" aria-hidden="true"></i><span>+5 / 20</span></div>
+          <div class="item shopping_basket"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>+2</span></div>
+          <div class="item profile"><img src="images/profile.png" alt="profile"><a href="#">Брюс Виллис</a></div>
+        </div><a class="arrow" href="#"><i class="fa fa-arrow-circle-right">   </i></a>
+      </header>
+      <nav class="nav"><a class="active_nav" href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i><span>Мой профиль</span></a><a href="#"><i class="fa fa-money" aria-hidden="true"></i><span>Оплаты</span></a><a href="#"><i class="fa fa-building-o" aria-hidden="true"></i><span>Управление аккаунтом</span></a><a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>Рефералы</span></a></nav>
+      <div class="profile-layout">
+        <aside class="aside">
+          <div class="aside_info aside_section">
+            <div class="photo">
+              <div class="main_photo"><img src="images/photo_profile.png" alt=""></div><a>
+                <div class="download"><img src="images/download.svg" alt=""></div></a>
+            </div>
+            <div class="name">  Брюс Виллис</div>
+            <div class="id_number">Ваш ID: 1099</div>
+            <div class="progress-bar">75%</div>
+          </div>
+          <div class="aside_contacts aside_section">
+            <div class="email"><i class="fa fa-envelope" aria-hidden="true"></i><span>Email <a href="mailto:jevo@gmail.com">jevo@gmail.com</a></span></div>
+            <div class="tel"><i class="fa fa-phone" aria-hidden="true"></i><span>Тел. <a href="tel:+380999659909">+380 99 965-99-09</a>
+                <div class="social_icons"><a href="viber://chat?number=380999659908"><img src="images/viber.svg" title="Viber" alt="Viber"></a><a href="tg://resolve?domain=jevo"><img src="images/telegram.svg" title="Telegram" alt="Telegram"></a><a class="whatsapp" href="whatsapp://send?phone=+120345678910"><img src="images/whatsapp.svg" title="WhatsApp" alt="WhatsApp"></a></div></span></div>
+            <!--.skype
+            //i.fa.fa-skype(aria-hidden='true')
+            //span Skype 
+                //a(href="skype: belkin.frontend@gmail.com") //belkin.frontend
+            -->
+            <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Адрес: Украина, Киев</span></div>
+          </div>
+          <div class="aside_referal aside_section">
+            <div class="all_referal flex_data"><i class="fa fa-users" aria-hidden="true"></i><span>Рефералов 29 <a href="#">Посмотреть всех</a></span><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+            <div class="your_referal"><i class="fa fa-user" aria-hidden="true"></i><span>Ваш реферал <a href="#">Максимович Олег</a></span><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+          </div>
+          <div class="aside_balans aside_section">
+            <div class="your_balans"><i class="fa fa-money" aria-hidden="true"></i><span>Ваш баланс: 1250 грн.</span></div>
+            <div class="your_tarif"><i class="fa fa-tasks" aria-hidden="true"></i><span>Тарифный пакет</span></div>
+            <div class="your_bonus flex_data"><i class="fa fa-gift" aria-hidden="true"></i><span>Ваш бонус: "Любой тарифный пакет". Пакет Бесплатен в течении : 1 месяц</span></div>
+          </div>
+          <div class="aside_last_entrance aside_section flex_data"><i class="fa fa-info-circle" aria-hidden="true"></i><span>Последний вход: 11:25  вчера. IP: 13.134.11.20</span></div>
+        </aside>
+        <main class="main">
+          <div class="nav_main">
+            <div class="nav_links"><a class="nav_main_active" href="#">Личные данные</a><a href="#">Мои сервисы</a><a href="#">Мой статус</a></div><span>Ваш ID: 1099</span>
+          </div>
+          <section class="general">
+            <article class="article_left">
+              <label for="field1">Фамилия</label>
+              <input id="field1" type="text">
+              <label for="field2">Имя</label>
+              <input id="field2" type="text">
+              <label for="field3">Отчество</label>
+              <input id="field3" type="text">
+              <label for="field4">Дата рождения</label>
+              <div class="field_birthday">
+                <div class="birthday">
+                  <select id="field4">
+                    <option value="1">1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                  </select><span>день</span>
+                </div>
+                <div class="birthday">
+                  <select>
+                    <option>Январь</option>
+                    <option>Февраль</option>
+                    <option>Март</option>
+                    <option>Апрель</option>
+                    <option>Май</option>
+                    <option>Июнь</option>
+                    <option>Июль</option>
+                    <option>Август</option>
+                    <option>Сентябрь</option>
+                    <option>Октябрь</option>
+                    <option>Ноябрь</option>
+                    <option>Декабрь</option>
+                  </select><span>месяц</span>
+                </div>
+                <div class="birthday"> 
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select><span>год</span>
+                </div>
+              </div>
+              <label for="field5"> Email</label>
+              <input id="field5" type="email">
+            </article>
+            <article class="article_right">
+              <label for="field6">Область</label>
+              <input id="field6" type="text" placeholder="Введите название области">
+              <label for="field7">Населённый пункт</label>
+              <input id="field7" type="text" placeholder="Введите название населённого пункта">
+              <label for="field8">Телефон</label>
+              <input class="country_code" id="field8" type="tel" placeholder="+380">
+              <input class="operator_code" type="tel">
+              <input class="phone_number" type="tel">
+              <input class="confirm_code" type="tel"><span class="social_icons"><i class="fa fa-info-circle" aria-hidden="true"></i><i class="fa fa-plus-circle" aria-hidden="true"></i><a href="viber://chat?number=380999659908"><img src="images/viber.svg" title="Viber" alt="Viber"></a><a href="tg://resolve?domain=jevo"><img src="images/telegram.svg" title="Telegram" alt="Telegram"></a><a class="whatsapp" href="whatsapp://send?phone=+120345678910"><img src="images/whatsapp.svg" title="WhatsApp" alt="WhatsApp"></a></span>
+              <label for="field9">Изменить пароль</label>
+              <input id="field9" type="password" placeholder="Ваш старый пароль">
+              <div class="new_password">
+                <input type="password" placeholder="Введите новый пароль"><i class="fa fa-info-circle" aria-hidden="true"></i>
+              </div>
+              <input type="password" placeholder="Повторите пароль">
+              <div class="button"><a href="#">Сохранить<i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+            </article>
+          </section>
+          <section class="tarif">
+            <div class="tarif_item1 item">
+              <p>Тарифный пакет: <a href="#">Выбрать пакет</a></p>
+              <button type="submit">Поменять тариф</button>
+            </div>
+            <div class="tarif_item2 item">
+              <p>Ваш баланс:</p>
+              <p>1250 грн.</p>
+            </div>
+            <div class="tarif_item3 item">
+              <button type="submit">Пополнить баланс</button>
+            </div>
+          </section>
+          <section class="segments">
+            <div class="segments_header">
+              <p>Сегменты</p><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Добавить сегмент</span></a>
+            </div>
+            <div class="segments_main">
+              <div class="segments_main_links">
+                <div class="refer"><a href="#">Операция</a></div>
+                <div class="refer"><a href="#">Тип объекта</a></div>
+                <div class="refer"><a href="#">Населённый пункт</a></div>
+                <div class="refer"><a href="#">Район</a></div>
+              </div>
+              <div class="segments_main_result">
+                <isvg aria-hidden="true"></isvg><span>Сейчас у вас не добавлен ни один сегмент</span>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="footer_wrap">
+          <div class="copyright">
+            <p>2016-2017 &copy; Agent24. АН &laquo;22 Столетие&raquo;. Все права защищены.</p>
+            <p>email: <a href="mailto:info@agent24.ua">info@agent24.ua</a></p>
+          </div>
+          <ul class="links">
+            <li><a href="#">Политика безопасности</a></li>
+            <li><a href="#">Правила</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+            <li><a href="#">Техническая поддержка</a></li>
+            <li><a href="#"><img src="images/visa.png" alt="Visa"></a></li>
+            <li><a href="#"><img src="images/liqpay.png" alt="Visa"></a></li>
+          </ul>
+        </div><a class="chevron_up" href="#header"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+      </footer>
+      <script src="js/main.min.js"></script>
+    </div>
+  </body>
+</html>

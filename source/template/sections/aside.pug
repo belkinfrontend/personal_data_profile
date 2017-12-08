@@ -1,0 +1,54 @@
+aside.aside
+    .aside_info.aside_section
+        .photo
+            .main_photo: img(src="images/photo_profile.png" alt="")
+            a: .download: img(src="images/download.svg" alt="")
+        .name   Брюс Виллис
+        .id_number Ваш ID: 1099
+        .progress-bar 75%
+        
+    .aside_contacts.aside_section
+        .email
+            i.fa.fa-envelope(aria-hidden='true')
+            span Email 
+                a(href="mailto:jevo@gmail.com") jevo@gmail.com
+        .tel
+            i.fa.fa-phone(aria-hidden='true')
+            span Тел. 
+                a(href="tel:+380999659909") +380 99 965-99-09
+                .social_icons
+                    a(href="viber://chat?number=380999659908"): img(src="images/viber.svg" title="Viber" alt="Viber")
+                    a(href="tg://resolve?domain=jevo" ): img(src="images/telegram.svg" title="Telegram" alt="Telegram")
+                    a(href="whatsapp://send?phone=+120345678910").whatsapp: img(src="images/whatsapp.svg" title="WhatsApp" alt="WhatsApp")
+        //.skype
+            //i.fa.fa-skype(aria-hidden='true')
+            //span Skype 
+                //a(href="skype: belkin.frontend@gmail.com") //belkin.frontend
+        .location
+            i.fa.fa-map-marker(aria-hidden='true')
+            span Адрес: Украина, Киев
+            
+    .aside_referal.aside_section
+        .all_referal.flex_data
+            i.fa.fa-users(aria-hidden='true')
+            span Рефералов 29 
+                a(href="#") Посмотреть всех
+            i.fa.fa-info-circle(aria-hidden='true')
+        .your_referal
+            i.fa.fa-user(aria-hidden='true')
+            span Ваш реферал 
+                a(href="#") Максимович Олег
+            i.fa.fa-info-circle(aria-hidden='true')
+    .aside_balans.aside_section
+        .your_balans
+            i.fa.fa-money(aria-hidden='true')
+            span Ваш баланс: 1250 грн.
+        .your_tarif
+            i.fa.fa-tasks(aria-hidden='true')
+            span Тарифный пакет
+        .your_bonus.flex_data
+            i.fa.fa-gift(aria-hidden='true')
+            span Ваш бонус: "Любой тарифный пакет". Пакет Бесплатен в течении : 1 месяц
+    .aside_last_entrance.aside_section.flex_data
+        i.fa.fa-info-circle(aria-hidden='true')
+        span Последний вход: 11:25  вчера. IP: 13.134.11.20

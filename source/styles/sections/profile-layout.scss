@@ -8,8 +8,9 @@
     align-items: stretch;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
-    margin: 15px 0px 0px 56px;
+    margin: 15px 0px 0px 0px;
     padding: 12px 0 55px;
+    padding-left: 56px;
     color: #242424;
     
     @media (max-width: 767px) {

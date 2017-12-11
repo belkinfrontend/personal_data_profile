@@ -35,11 +35,11 @@
         .logo {}
 
         .logo_text {
+            font-family: $ff-light;
+            font-size: 10px;
             text-transform: uppercase;
-            font-weight: bold;
-            font-size: 12px;
             margin-left: 5px;
-            letter-spacing: .7px;
+            letter-spacing: .5px;
             
             @media (max-width: 1245px) {
                 display: none;

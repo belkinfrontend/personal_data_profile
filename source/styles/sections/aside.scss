@@ -2,11 +2,10 @@
     font-family: $ff-light;
     font-size: 14px;
     color: #1E2021;
-    background: #f4f5f7;
-    //flex-basis: 330px;
+    background: #f4f5f7; //flex-basis: 330px;
     width: 330px;
     flex-grow: 0;
-    
+
     border-radius: 2px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24);
 
@@ -33,7 +32,7 @@
             padding: 20px 0;
             padding-top: 25px;
             font-size: 11px;
-            
+
             span {
                 margin-right: 10px;
             }
@@ -45,9 +44,10 @@
         margin: 0;
 
         .photo {
-            position: relative;
+
 
             .main_photo {
+                position: relative;
 
                 img {
                     //max-width: 100%;
@@ -64,6 +64,13 @@
 
                     img {
                         max-width: 100%;
+                    }
+
+                    @media (max-width: 768px) {
+                        right: 28%;
+                    }
+                    @media (max-width: 420px) {
+                        right: 8%;
                     }
                 }
             }
@@ -95,7 +102,7 @@
     }
 
     &_contacts {
-        
+
         span {
             font-weight: bold;
             margin-right: 6px;
@@ -110,20 +117,20 @@
 
             .social_icons {
                 display: inline;
-                margin-left: 5px;
+                margin-left: 38px;
 
                 a {
 
 
                     img {
                         filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24));
-                        max-width: 25px;
+                        max-width: 22px;
                         vertical-align: middle;
                     }
                 }
                 .whatsapp {
                     img {
-                        min-width: 30px;
+                        min-width: 28px;
                     }
                 }
             }
@@ -134,7 +141,7 @@
             }
         }
 
-        }
+    }
 
     &_referal {
 
@@ -144,31 +151,56 @@
         .your_referal {
 
             span {
-                margin-right: 15px;
+                margin-right: 5px;
+                a {
+                    margin-left: 10px;
+                }
             }
+
         }
+        .all_referal {
+            a {
+                font-size: 12px;
+            }
+            .fa-info-circle {
+                margin-left: 12px;
+            }
+
+        }
+
         .your_referal {
             .fa-info-circle {
-                margin-left: 5px;
+                //margin-left: 0px;
             }
         }
+
     }
 
     i {
         width: 35px;
-        padding: 15px 20px 10px 20px; //font-weight: bold;
-        font-size: 14px;
+        padding: 8px 25px 10px; //font-weight: bold;
+        font-size: 16px;
         display: inline-block;
     }
 
     .flex_data {
         display: flex; //justify-content: space-between;
         margin-top: 10px;
-        
+
     }
     .flex_data i {
+        width: 35px;
         padding: 0px 20px 6px 20px;
-        //margin: auto 0;
+        margin-left: 6px;
+        margin-right: 5px; //margin: auto 0;
+    }
+
+
+    // -------------------media
+    @media (max-width: 768px) {
+        flex-grow: 1;
+        margin: 0 auto;
+
     }
 
 

@@ -1,7 +1,7 @@
 .footer {
     height: 130px;
     padding: 20px 20px;
-    font-size: 14px;
+    font-size: 11px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -18,6 +18,9 @@
         }
         a {
             color: #0097a7;
+        }
+        .footer_email {
+            margin-top: 6px;
         }
     }
 
@@ -41,10 +44,19 @@
                 }
 
                 img {
-                    //padding: 0 30px;
+                    padding-left: 15px;
+                    max-width: 140px;
 
                 }
             }
+        }
+        .visa,
+        .liqpay {
+            
+            @media (max-width: 768px) {
+                display: none;
+        
+        }
         }
     }
 
@@ -65,4 +77,6 @@
     @media (max-width: 1245px) {
         font-size: 12px;
     }
+    
+    
 }

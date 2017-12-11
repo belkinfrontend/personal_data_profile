@@ -9,14 +9,16 @@
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     margin-top: 15px;
-    padding: 12px 0 55px;
+    padding: 16px 0 55px;
     padding-left: 36px;
     color: #242424;
-    
-    @media (max-width: 767px) {
-            margin: 0;
-        }
-     @media (max-width: 1024px) {
-            //flex-flow: row nowrap;
-        }
+
+    @media (max-width: 768px) {
+        //margin: 0;
+        flex-flow: row wrap;
+        padding: 16px 10px;
+    }
+    @media (max-width: 1024px) {
+        //flex-flow: row nowrap;
+    }
 }

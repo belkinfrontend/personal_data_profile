@@ -3,22 +3,18 @@
     padding: 0 30px;
 
     .nav_main {
-        font-family: $ff-light;
-        //margin-top: 12px;
+        font-family: $ff-light; //margin-top: 12px;
         border-bottom: 1px solid #d7d7d7;
         padding: 9px 0;
-        margin-left: 0px;
-        max-width: 760px;
-
+        margin-left: 0px; //max-width: 730px;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: flex-start;
-        
+
 
         .nav_links {
             //margin-right: 170px;
-
             a {
                 padding: 8px;
                 margin: 0 18px;
@@ -32,8 +28,12 @@
 
         span {
             //padding: 8px;
-            margin: 0 10px;
-            //margin-left: 220px;
+            //margin: 0 10px;
+            margin-right: 185px;
+
+            @media (max-width: 1024px) {
+                margin-right: 45px;
+            }
         }
     }
 
@@ -43,7 +43,7 @@
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: flex-start;
-        margin: 45px 0 20px;
+        margin-top: 45px;
 
 
         @media (max-width: 768px) {
@@ -53,11 +53,9 @@
 
         article {
             //padding: 0 30px;
-
-
             input {
                 display: block;
-                
+
             }
             input,
             select {
@@ -65,10 +63,15 @@
                 margin-top: 8px;
                 padding: 0px 14px;
                 border-radius: 2px;
-                width: 396px;
+                width: 327px;
                 height: 34px;
                 border: none;
                 background: #eeeeee;
+
+                @media (max-width: 401px) {
+                    width: 285px;
+
+                }
 
             } // INPUT  for  phone
             .country_code,
@@ -80,19 +83,34 @@
             }
 
             .country_code {
-                width: 60px;
+                width: 58px;
             }
             .operator_code {
-                width: 60px;
+                width: 58px;
+                
+                @media (max-width: 401px) {
+                    width: 48px;
+
+                }
             }
             .phone_number {
-                width: 155px;
+                width: 110px;
+                
+                @media (max-width: 401px) {
+                    width: 107px;
+
+                }
             }
             .confirm_code {
-                width: 110px;
+                width: 89px;
+                
+                @media (max-width: 401px) {
+                    width: 61px;
+
+                }
             }
-            
-            
+
+
             select {
                 //display: inline-block;
                 width: 125px;
@@ -110,29 +128,30 @@
                 display: block;
                 color: #000;
             }
-            
+
             .field_birthday {
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-between;
                 align-items: center;
-                
+
                 margin-bottom: 40px;
-                
+
                 .birthday {
                     display: flex;
                     flex-flow: column wrap;
                     justify-content: flex-start;
                     align-items: center;
                     margin: 0;
-                    
+
                     select {
                         margin: 0;
                         margin-top: 8px;
-                    }
-                    
-                    span {
                         
+                    }
+
+                    span {
+
                         padding: 0;
                         text-align: center;
                         font-family: $ff-light;
@@ -146,9 +165,24 @@
         .article_left {
             padding: 0 20px;
             
+            @media (max-width: 401px) {
+                    padding: 0;
+
+                }
+
             input {
                 width: 291px;
-                
+
+
+                @media (max-width: 1024px) {
+                    width: 327px;
+
+                }
+                @media (max-width: 401px) {
+                    width: 285px;
+                    
+                }
+
             }
         }
 
@@ -156,10 +190,15 @@
             //flex-basis: 750px;
             padding: 0 20px;
             
-            
+            @media (max-width: 401px) {
+                    padding: 0;
+
+                }
+
+
             .social_icons {
                 margin-left: 20px;
-                
+
                 width: 150px;
 
                 i {
@@ -170,25 +209,24 @@
 
                     img {
                         filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24));
-                        max-width: 30px;
+                        max-width: 28px;
                         vertical-align: middle;
                     }
                 }
-                
+
                 .whatsapp {
-                        img {
-                            min-width: 36px;
-                        }
+                    img {
+                        min-width: 36px;
                     }
+                }
             }
-            
+
             .new_password {
                 //display: inline;
-                
                 input {
                     display: inline;
                 }
-                
+
                 i {
                     margin-left: 20px;
                 }
@@ -198,36 +236,34 @@
         .button {
             font-family: $ff-light;
             color: #242424;
-            background-color: #ffbf00;
             width: 217px;
-            //height: 54px;
-            //line-height: 3.5;
-            padding: 10px 0;
-
-            text-align: right;
-            margin: 49px 50px 30px; 
+            height: 36px;
+            line-height: 30px;
             border-radius: 2px;
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24);
-            
+            background-color: #ffbf00;
+            vertical-align: middle;
+
+            text-align: right;
+            margin: 36px 50px;
+            border-radius: 2px;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24);
+
 
             a {
                 text-decoration: none;
                 margin-left: 30px;
                 vertical-align: middle;
-                font-size: 14px;
-                
-                //margin-right: 20px;
-                
+                font-size: 14px; //margin-right: 20px;
             }
 
             img {
-                
+
                 margin-right: 16px;
                 margin-left: 45px;
-                font-size: 36px;
-                height: 19px;
+                margin-bottom: 2px;
+                font-size: 36px; //height: 19px;
                 vertical-align: middle;
-                //text-align: right;
             }
         }
 
@@ -241,16 +277,17 @@
         border-top: 1px solid #e0e0e0;
         border-bottom: 1px solid #e0e0e0;
 
-        padding: 20px 0px;
+        padding: 20px 37px;
 
         .item {
-            padding: 0 40px;
+            //padding: 0 30px;
             text-align: center;
 
         }
 
         .tarif_item1 {
             text-align: left;
+            padding-right: 97px;
 
             a {
                 color: #ce2d2d;
@@ -269,37 +306,44 @@
         .tarif_item2 {
 
             text-align: left;
-            
+            padding-right: 32px;
+
+
             p:last-child {
-                font-size: 28px;
+                font-size: 24px;
+                color: #000;
                 width: 179px;
                 height: 79px;
                 text-align: center;
                 background-color: #f3f5f7;
-                padding: 22px 0;
+                padding: 25px 0;
             }
         }
 
         .tarif_item3 {
-            align-self: center;
+            align-self: flex-end;
 
             button {
                 width: 217px;
                 padding: 10px 30px;
-                margin: 20px 10px 0;
+                margin-bottom: 42px;
                 border: none;
                 border-radius: 2px;
                 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24);
                 background-color: #f3f5f7;
             }
         }
+        
+        @media (max-width: 401px) {
+                   padding: 20px 20px;
+                    
+                }
     } //-------------------- .segments
     .segments {
         display: flex;
         flex-flow: column wrap;
         padding: 0 20px;
-        padding-top: 10px;
-        //max-width: 5100px;
+        padding-top: 10px; //max-width: 5100px;
         width: 100%;
 
         &_header {
@@ -307,7 +351,7 @@
             flex-flow: row wrap;
             justify-content: space-between;
             align-items: center;
-                 
+
 
             i {
                 color: #555959;
@@ -329,47 +373,52 @@
                 justify-content: space-between;
                 background-color: #eeeeee;
 
+                @media (max-width: 768px) {
+                    flex-flow: column wrap;
+                }
+
                 .refer {
-                    padding: 10px 40px;
-                    //height: 41px;
+                    padding: 10px 40px; //height: 41px;
                     //width: 200px;
                     box-sizing: border-box;
                     text-align: center;
 
+
+
                     &:nth-child(odd) {
                         background-color: #f3f5f7;
                     }
-                    
-                    
+
 
                     a {
-                        text-decoration: none;
-                        //padding: 0px 50px;
+                        text-decoration: none; //padding: 0px 50px;
                         text-align: center;
+
+
                     }
                 }
                 .area {
                     //padding: 10px 70px !important;
-                    margin: 0 auto; 
+                    margin: 0 auto;
                     vertical-align: middle;
-                    }
+                }
 
 
             }
 
             &_result {
                 margin: 50px 0;
-                
+
                 span {
                     font-size: 18px;
-                    
+
                 }
 
                 i {
                     margin-right: 8px;
                     font-size: 18px;
                     color: #3d4242;
-                    
+
                 }
             }
 
@@ -386,20 +435,15 @@
 
 
     .nav_main_active {
-        border: 1px solid #d7d7d7;
-        //border-bottom: none;
+        border: 1px solid #d7d7d7; //border-bottom: none;
     }
-
-
-
-
-
-
 
 
 
 
     @media (max-width: 1024px) {
-        padding: 0;
+        padding: 10px;
     }
+
+
 }

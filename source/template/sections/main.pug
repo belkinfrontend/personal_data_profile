@@ -20,7 +20,7 @@ main.main
             label(for='field4') Дата рождения
             .field_birthday
                 .birthday
-                    select#field4
+                    select#field4.day
                         option(value="1") 1
                         option 2
                         option 3
@@ -71,10 +71,10 @@ main.main
                     span месяц
                     
                 .birthday 
-                    select
-                        option 1
-                        option 2
-                        option 3
+                    select.year
+                        option 1978
+                        option 1979
+                        option 1980
                     span год
 
             
@@ -112,7 +112,7 @@ main.main
             
             .button
                 a(href="#") Сохранить
-                i.fa.fa-angle-right(aria-hidden='true')
+                    img(src="images/angle.svg" title="" alt="")
         
     section.tarif
         .tarif_item1.item
@@ -136,7 +136,7 @@ main.main
                 .refer: a(href="#") Операция
                 .refer: a(href="#") Тип объекта
                 .refer: a(href="#") Населённый пункт
-                .refer: a(href="#") Район
+                .refer.area: a(href="#") Район
             .segments_main_result
                 i.fa.fa-info-circle(aria-hidden='true')
                 span Сейчас у вас не добавлен ни один сегмент

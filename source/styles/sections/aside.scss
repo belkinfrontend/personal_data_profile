@@ -147,6 +147,11 @@
                 margin-right: 15px;
             }
         }
+        .your_referal {
+            .fa-info-circle {
+                margin-left: 5px;
+            }
+        }
     }
 
     i {
@@ -159,10 +164,11 @@
     .flex_data {
         display: flex; //justify-content: space-between;
         margin-top: 10px;
+        
     }
     .flex_data i {
-        padding: 2px 20px 6px 20px;
-
+        padding: 0px 20px 6px 20px;
+        //margin: auto 0;
     }
 
 

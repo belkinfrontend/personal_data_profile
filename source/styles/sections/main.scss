@@ -21,7 +21,7 @@
 
             a {
                 padding: 8px;
-                margin: 0 25px;
+                margin: 0 18px;
                 text-decoration: none;
 
                 @media (max-width: 1023px) {
@@ -91,10 +91,19 @@
             .confirm_code {
                 width: 110px;
             }
-
+            
+            
             select {
                 //display: inline-block;
-                width: 95px;
+                width: 125px;
+                padding-left: 20px;
+                padding-right: 0;
+            }
+            .day {
+                width: 72px;
+            }
+            .year {
+                width: 90px;
             }
 
             label {
@@ -108,7 +117,7 @@
                 justify-content: space-between;
                 align-items: center;
                 
-                margin-bottom: 20px;
+                margin-bottom: 40px;
                 
                 .birthday {
                     display: flex;
@@ -196,7 +205,7 @@
             padding: 10px 0;
 
             text-align: right;
-            margin: 30px 50px; 
+            margin: 49px 50px 30px; 
             border-radius: 2px;
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24);
             
@@ -211,11 +220,12 @@
                 
             }
 
-            i {
+            img {
                 
                 margin-right: 16px;
                 margin-left: 45px;
-                font-size: 24px;
+                font-size: 36px;
+                height: 19px;
                 vertical-align: middle;
                 //text-align: right;
             }
@@ -234,7 +244,7 @@
         padding: 20px 0px;
 
         .item {
-            padding: 0 20px;
+            padding: 0 40px;
             text-align: center;
 
         }
@@ -288,7 +298,9 @@
         display: flex;
         flex-flow: column wrap;
         padding: 0 20px;
+        padding-top: 10px;
         //max-width: 5100px;
+        width: 100%;
 
         &_header {
             display: flex;
@@ -315,21 +327,32 @@
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: space-between;
-                background-color: #f3f5f7;
+                background-color: #eeeeee;
 
                 .refer {
-                    padding: 10px 30px;
+                    padding: 10px 40px;
+                    //height: 41px;
+                    //width: 200px;
                     box-sizing: border-box;
+                    text-align: center;
 
-                    &:nth-child(2n) {
-                        background-color: #eeeeee;
+                    &:nth-child(odd) {
+                        background-color: #f3f5f7;
                     }
+                    
+                    
 
                     a {
                         text-decoration: none;
-
+                        //padding: 0px 50px;
+                        text-align: center;
                     }
                 }
+                .area {
+                    //padding: 10px 70px !important;
+                    margin: 0 auto; 
+                    vertical-align: middle;
+                    }
 
 
             }
